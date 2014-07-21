@@ -1,1 +1,7 @@
-This file was created by IntelliJ IDEA 12.1.4 for binding GitHub repository
+This project will be the new home of any and all Bukkit plugin work that I do. Branches
+of the packages under this project to their respective plugins is obviously perfectly
+fine, but I needed to consolidate the Bukkit repos (due to the migration to IntelliJ), so
+here we are. Feel free to do with this project or any of its sub-projects as you will.
+
+More information about these plugins may be found in their respective dev.bukkit.org
+pages, at nekoyoubi.com, or stitchgaming.com depending.
