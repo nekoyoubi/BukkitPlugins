@@ -1,0 +1,49 @@
+# Tells eXPra if you are using a permissions system.
+use-permissions: false
+# eXPra will not award any XP in worlds listed below. Other effects will remain, though.
+disabled-worlds:
+    - noxpforyou
+disabled-players:
+    - TehCheater
+# What percentage of levels should be lost upon player death?
+death-percent-loss: 50
+# Should we player death cause experience to drop at all?
+player-xp-drop: true
+# Default rates and experience award amounts.
+defaults:
+    # Amount and rate to give by default for placing blocks.
+    block-place: 1@20
+    # Amount and rate to give by default for breaking blocks.
+    block-break: 1@20
+    # Amount and rate to give by default for fishing.
+    fishing: 2@1
+    # Amount given for lighting areas.
+    lighting: 1@5
+    # Amount given for taming wolves and ocelots.
+    taming: 5@1
+# The rates and amounts for specific blocks and actions.
+overrides:
+    block-place:
+    # wheat, pumpkin, melon, carrot, potato
+    - 59=1@5
+    - 104=1@5
+    - 105=1@5
+    - 141=1@5
+    - 142=1@5
+    # saplings
+    - 6=1@5
+    # cake
+    - 92=10@1
+    # sugar cane
+    - 83=1@7
+    # cactus
+    - 81=1@6
+    block-break:
+    # tall grass
+    - 31=1@15
+    # obsidian
+    - 49=1@1
+    # melon
+    - 103=1@3
+    # sugar cane
+    - 83=1@40
