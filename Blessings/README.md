@@ -16,7 +16,7 @@ Below is some basic usage information. This information is in a constant state o
 
 Shrines
 -------
-Shrines are created by simply placing a golden block. What material your golden block is placed on determines the god the shine belongs to. Upon placing a shrine, you will be notified as to what god owns the shrine.
+Shrines are created by simply placing a golden block (configurable). What material your golden block is placed on determines the god the shine belongs to. Upon placing a shrine, you will be notified as to what god owns the shrine.
 
 To find out what blocks to place the shrine on for a particular god, type `/blessings [godname]`
 

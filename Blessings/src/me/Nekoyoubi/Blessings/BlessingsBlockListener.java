@@ -12,7 +12,7 @@ public class BlessingsBlockListener implements Listener {
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
     	Block shrine = event.getBlock();
-        if (shrine.getType() == Material.GOLD_BLOCK) {
+        if (shrine.getType() == Blessings.shrineMaterial) {
             Player player = event.getPlayer();
             Block under = shrine.getRelative(0, -1, 0);
             for (God god : Blessings.gods) {

@@ -28,7 +28,7 @@ This is the description displayed in the `/blessings gods` list and in the `/ble
 
 gods.`<godname>`.bases
 --------------------------------
-This is a list of block ids that when under a gold block will act as a shrine for this god.
+This is a list of block ids that when under a gold block (configurable) will act as a shrine for this god.
 
 gods.`<godname>`.ignoresBelow
 --------------------------------

@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -20,7 +21,9 @@ public class Blessings extends JavaPlugin {
     private final Listener blockListener = new BlessingsBlockListener();
     
     public static ArrayList<God> gods = new ArrayList<God>();
-    
+    public static Material shrineMaterial = Material.DIAMOND_BLOCK;
+
+
     public static boolean testing = false;
     
 	@Override
@@ -85,6 +88,9 @@ public class Blessings extends JavaPlugin {
      	saveConfig();
      	reloadConfig();
      	gods = new ArrayList<God>();
+        if (getConfig().get("shrine") != null) {
+            shrineMaterial = Material.getMaterial(getConfig().get("shrine").toString());
+        }
     	List<String> godList = Nekoyoubi.castList(String.class, getConfig().getList("gods.list"));
     	for (String name : godList) {
 			loadGod(name);

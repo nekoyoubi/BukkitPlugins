@@ -17,7 +17,7 @@ public class BlessingsPlayerListener implements Listener {
 		if (event.getAction() != Action.RIGHT_CLICK_BLOCK) return;
         Player player = event.getPlayer();
         Block shrine = event.getClickedBlock();
-        if (shrine.getType() == Material.GOLD_BLOCK) {
+        if (shrine.getType() == Blessings.shrineMaterial) {
         	event.setCancelled(true);
             //if (player.getLevel() <= 0 && player.getExperience() <= 0) return;
             Block under = shrine.getRelative(0, -1, 0);
