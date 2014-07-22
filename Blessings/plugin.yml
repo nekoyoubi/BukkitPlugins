@@ -1,0 +1,11 @@
+name: Blessings
+main: me.Nekoyoubi.Blessings.Blessings
+version: 0.5
+commands:
+    blessings:
+        description: Displays help text for Blessings.
+        usage: /<command>
+        aliases: bl
+    faith:
+        description: Displays the user's current level.
+        usage: /<command>

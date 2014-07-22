@@ -1,0 +1,279 @@
+gods:
+  list:
+  - ares
+  - athena
+  - gaia
+  - hades
+  - poseidon
+  - zeus
+  ares:
+    name: Aphrodite
+    color: '&c'
+    description: Goddess of love and beauty.
+    bases:
+    - 26
+    - 35
+    - 37
+    - 38
+    ignoresBelow: 1
+    angersBelow: 0
+    messages:
+      please: '%GOD% shows you the beauty of %WORLD%.'
+      anger: '%GOD% is disappointed with your lack of adoration.'
+      ignore: You are not yet ready to experience %GOD% fully.
+    blessings:
+    - 1@500 give player 262x0-32
+    - 2@250 give player;random 351:1r1-10
+    - 2@250 give player;random 351:14r1-10
+    - 3@500 give player 261;262x0-64
+    - 4@300 give player 259
+    - 5@500 give player 258
+    - 6@500 give player 101x1-32
+    - 7@500 give player 267
+    - 8@500 give player 261;262x0-64
+    - 10@500 spawn player tamedwolf 1-5
+    - 10@500 give player 320r0-3;364r0-3
+    - 10@500 give player 262x32-96
+    - 12@500 give player 279
+    - 14@500 give player 276
+    - 15@500 give player 46x1-5
+    - 17@100 spawn player;random tamedwolf 1-5
+    - 20@50 spawn world tamedwolf 1-2
+    curses:
+    - 500 burn player 3
+    - 500 spawn player angrywolf 1
+  ares:
+    name: Ares
+    color: '&4'
+    description: God of war and violence.
+    bases:
+    - 12
+    - 24
+    - 51
+    ignoresBelow: 1
+    angersBelow: 3
+    messages:
+      please: '%GOD% rallies the armies of %WORLD% to your aid.'
+      anger: '%GOD% warns you of the inadequacy of your faith.'
+      ignore: You would only incite the rage of %GOD% at this level.
+    blessings:
+    - 1@500 give player 262x0-32
+    - 2@250 give player;random 351:1r1-10
+    - 2@250 give player;random 351:14r1-10
+    - 3@500 give player 261;262x0-64
+    - 4@300 give player 259
+    - 5@500 give player 258
+    - 6@500 give player 101x1-32
+    - 7@500 give player 267
+    - 8@500 give player 261;262x0-64
+    - 10@500 spawn player tamedwolf 1-5
+    - 10@500 give player 320r0-3;364r0-3
+    - 10@500 give player 262x32-96
+    - 12@500 give player 279
+    - 14@500 give player 276
+    - 15@500 give player 46x1-5
+    - 17@100 spawn player;random tamedwolf 1-5
+    - 20@50 spawn world tamedwolf 1-2
+    curses:
+    - 500 burn player 3
+    - 500 spawn player angrywolf 1
+  athena:
+    name: Athena
+    color: '&e'
+    description: Goddess of wisdom, civilization, and military strategy.
+    bases:
+    - 45
+    - 47
+    - 98
+    ignoresBelow: 1
+    angersBelow: 3
+    messages:
+      please: '%GOD% smiles her fortune upon you.'
+      anger: '%GOD% tests your loyalty and faith.'
+      ignore: '%GOD% is simply too busy for you now.'
+    blessings:
+    - 2@250 give player;random 351:11r1-10
+    - 2@250 give player;random 351:7r1-10
+    - 2@250 give player;random 351:9r1-10
+    - 5@500 give player 20x8-32
+    - 6@500 give player 98x8-32
+    - 7@500 give player 45x8-32
+    - 8@500 give player 102x8-32
+    - 9@500 give player 355
+    - 10@500 give player 306
+    - 10@500 give player 307
+    - 10@500 give player 308
+    - 10@500 give player 309
+    - 12@50 give player 306;307;308;309
+    - 15@500 give player 46x1-5
+    - 15@400 give player 310
+    - 15@400 give player 311
+    - 15@400 give player 312
+    - 15@400 give player 313
+    - 17@50 give player 310;311;312;313
+    - 20@50 repair world 100
+    curses:
+    - 500 weaken player 10
+    - 250 weaken player 25
+  gaia:
+    name: Gaia
+    color: '&a'
+    description: Goddess of the earth and all life.
+    bases:
+    - 2
+    - 3
+    - 17
+    - 18
+    ignoresBelow: 1
+    angersBelow: 0
+    messages:
+      please: '%GOD% bestows the earth''s blessigns upon you.'
+      anger: '%GOD% frowns upon your apathy.'
+      ignore: You would be unhear by %GOD% with this faith.
+    blessings:
+    - 1@500 give player;random 295x8-64;295x8-64;6r0-10;6:1r0-10;6:2r0-10
+    - 2@250 give player;random 351:2r1-10
+    - 2@250 give player;random 351:3r1-10
+    - 2@250 give player;random 351:10r1-10
+    - 3@500 feed player;random 20
+    - 4@500 give player 81x8-32
+    - 5@500 give player 86x4-16
+    - 6@500 give player 103x2-8
+    - 7@500 give player 338x8-32
+    - 8@500 give player 106x8-32
+    - 9@500 give player 39x1-32;40x1-32
+    - 10@500 give player 282;282;282
+    - 10@500 give player 260x1-3
+    - 10@250 give player 296x32-64;296x32-64
+    - 10@500 give player 292
+    - 10@250 give player 17:0x1-64
+    - 10@250 give player 17:1x1-64
+    - 10@250 give player 17:2x1-64
+    - 11@500 give player 256
+    - 12@500 give player 326
+    - 15@500 give player 293
+    - 16@500 give player 277
+    - 17@500 heal world 20
+    - 17@500 feed world 20
+    curses:
+    - 500 hunger player 2
+    - 500 hunger player;random 5
+  hades:
+    name: Hades
+    color: '&8'
+    description: God of the underworld.
+    bases:
+    - 7
+    - 49
+    - 10
+    - 11
+    - 91
+    ignoresBelow: 1
+    angersBelow: 4
+    messages:
+      please: '%GOD% allows you to walk away... this time.'
+      anger: '%GOD% curses your few remaining days.'
+      ignore: Disturbing %GOD% now could only end badly.
+    blessings:
+    - 2@250 give player;random 351:0r1-10
+    - 2@250 give player;random 351:8r1-10
+    - 3@500 give player 352x1-32
+    - 4@500 give player 50x8-32
+    - 5@500 give player 263x4-16;263r4-16
+    - 6@500 give player 91x1-4
+    - 7@500 give player 87x4-16
+    - 7@500 give player 88x4-16
+    - 7@500 give player 89x4-16
+    - 7@500 give player 30x4-16
+    - 9@500 give player 257
+    - 10@400 give player 264x1-4
+    - 10@100 give player 264x2-8
+    - 12@500 give player 91x2-8
+    - 13@500 give player 327
+    - 15@500 give player 293
+    - 15@100 give world 50x8-32
+    - 20@50 give world 264x1-3
+    curses:
+    - 500 dig player 3
+    - 100 dig player;random 3
+    - 50 dig world 3
+  poseidon:
+    name: Poseidon
+    color: '&3'
+    description: God of the seas.
+    bases:
+    - 8
+    - 9
+    - 22
+    - 79
+    - 80
+    ignoresBelow: 1
+    angersBelow: 2
+    messages:
+      please: '%GOD% bestows the blessings of the sea unto you.'
+      anger: '%GOD% reminds you of the torment of the abyss.'
+      ignore: '%GOD% is too far away at sea to hear your prayers.'
+    blessings:
+    - 2@250 give player;random 351:4r1-10
+    - 2@250 give player;random 351:6r1-10
+    - 3@500 give player 349x4-16
+    - 4@500 give player 50x8-32
+    - 5@500 give player 263x4-16;263r4-16
+    - 5@500 give player 346
+    - 6@500 give player 333
+    - 7@500 give player 337x8-32
+    - 7@500 give player 24x4-16
+    - 7@500 give player 20x4-16
+    - 8@500 give player 102x4-16
+    - 9@500 give player 54x2-8
+    - 10@500 give player 326
+    - 10@500 give player 345
+    - 10@500 give player 346
+    - 12@250 give player;random 346
+    - 15@500 give player 79x8-32
+    - 17@500 give player 19x2-8
+    - 20@500 give player 22x2-8
+    curses:
+    - 500 dig player 3
+    - 100 dig player;random 3
+    - 50 dig world 3
+  zeus:
+    name: Zeus
+    color: '&d'
+    description: God of sky and thunder.
+    bases:
+    - 0
+    - 29
+    - 33
+    - 34
+    - 42
+    ignoresBelow: 1
+    angersBelow: 3
+    messages:
+      please: '%GOD% channels the might of the gods to you.'
+      anger: '%GOD% strikes fear into your weak heart.'
+      ignore: '%GOD% cannot be bothered with you for now.'
+    blessings:
+    - 2@250 give player;random 351:12r1-10
+    - 2@250 give player;random 351:5r1-10
+    - 5@500 give player 331x8-32
+    - 5@500 give player 69x4-16
+    - 5@500 give player 70x4-16
+    - 5@500 give player 76x4-16
+    - 5@500 give player 77x4-16
+    - 10@500 give player 265x2-8
+    - 10@250 give player 265x4-16
+    - 10@250 give player 265x2-8;266x2-8
+    - 10@500 give player 345
+    - 10@500 give player 347
+    - 12@500 give player 33x1-4
+    - 15@500 give player 27x1-4
+    - 15@500 give player 28x1-4
+    - 15@500 give player 29x1-4
+    - 15@500 give player 66x8-32
+    - 15@250 give player 66x16-64
+    - 17@500 give player 19x2-8
+    - 20@50 give player 57r1-2;41r1-2
+    curses:
+    - 250 shock player 1
+    - 100 shock random 1
