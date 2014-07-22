@@ -129,7 +129,7 @@ gods:
     messages:
       please: '%GOD% bestows the earth''s blessigns upon you.'
       anger: '%GOD% frowns upon your apathy.'
-      ignore: You would be unhear by %GOD% with this faith.
+      ignore: You would be unheard by %GOD% with this faith.
     blessings:
     - 1@500 give player;random 295x8-64;295x8-64;6r0-10;6:1r0-10;6:2r0-10
     - 2@250 give player;random 351:2r1-10
