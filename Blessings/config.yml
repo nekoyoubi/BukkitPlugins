@@ -12,10 +12,10 @@ gods:
     color: '&c'
     description: Goddess of love and beauty.
     bases:
-    - 26
-    - 35
-    - 37
-    - 38
+    - BED_BLOCK
+    - WOOL
+    - YELLOW_FLOWER
+    - RED_ROSE
     ignoresBelow: 1
     angersBelow: 0
     messages:
@@ -23,21 +23,21 @@ gods:
       anger: '%GOD% is disappointed with your lack of adoration.'
       ignore: You are not yet ready to experience %GOD% fully.
     blessings:
-    - 1@500 give player 262x0-32
-    - 2@250 give player;random 351:1r1-10
-    - 2@250 give player;random 351:14r1-10
-    - 3@500 give player 261;262x0-64
-    - 4@300 give player 259
-    - 5@500 give player 258
-    - 6@500 give player 101x1-32
-    - 7@500 give player 267
-    - 8@500 give player 261;262x0-64
+    - 1@500 give player ARROWx0-32
+    - 2@250 give player;random INK_SACK:1r1-10
+    - 2@250 give player;random INK_SACK:14r1-10
+    - 3@500 give player BOW;ARROWx0-64
+    - 4@300 give player FLINT_AND_STEEL
+    - 5@500 give player IRON_AXE
+    - 6@500 give player IRON_FENCEx1-32
+    - 7@500 give player IRON_SWORD
+    - 8@500 give player BOW;ARROWx0-64
     - 10@500 spawn player tamedwolf 1-5
-    - 10@500 give player 320r0-3;364r0-3
-    - 10@500 give player 262x32-96
-    - 12@500 give player 279
-    - 14@500 give player 276
-    - 15@500 give player 46x1-5
+    - 10@500 give player GRILLED_PORKr0-3;COOKED_BEEFr0-3
+    - 10@500 give player ARROWx32-96
+    - 12@500 give player DIAMOND_AXE
+    - 14@500 give player DIAMOND_SWORD
+    - 15@500 give player TNTx1-5
     - 17@100 spawn player;random tamedwolf 1-5
     - 20@50 spawn world tamedwolf 1-2
     curses:
@@ -48,9 +48,9 @@ gods:
     color: '&4'
     description: God of war and violence.
     bases:
-    - 12
-    - 24
-    - 51
+    - SAND
+    - SANDSTONE
+    - FIRE
     ignoresBelow: 1
     angersBelow: 3
     messages:
@@ -58,21 +58,21 @@ gods:
       anger: '%GOD% warns you of the inadequacy of your faith.'
       ignore: You would only incite the rage of %GOD% at this level.
     blessings:
-    - 1@500 give player 262x0-32
-    - 2@250 give player;random 351:1r1-10
-    - 2@250 give player;random 351:14r1-10
-    - 3@500 give player 261;262x0-64
-    - 4@300 give player 259
-    - 5@500 give player 258
-    - 6@500 give player 101x1-32
-    - 7@500 give player 267
-    - 8@500 give player 261;262x0-64
+    - 1@500 give player ARROWx0-32
+    - 2@250 give player;random INK_SACK:1r1-10
+    - 2@250 give player;random INK_SACK:14r1-10
+    - 3@500 give player BOW;ARROWx0-64
+    - 4@300 give player FLINT_AND_STEEL
+    - 5@500 give player IRON_AXE
+    - 6@500 give player IRON_FENCEx1-32
+    - 7@500 give player IRON_SWORD
+    - 8@500 give player BOW;ARROWx0-64
     - 10@500 spawn player tamedwolf 1-5
-    - 10@500 give player 320r0-3;364r0-3
-    - 10@500 give player 262x32-96
-    - 12@500 give player 279
-    - 14@500 give player 276
-    - 15@500 give player 46x1-5
+    - 10@500 give player GRILLED_PORKr0-3;COOKED_BEEFr0-3
+    - 10@500 give player ARROWx32-96
+    - 12@500 give player DIAMOND_AXE
+    - 14@500 give player DIAMOND_SWORD
+    - 15@500 give player TNTx1-5
     - 17@100 spawn player;random tamedwolf 1-5
     - 20@50 spawn world tamedwolf 1-2
     curses:
@@ -83,9 +83,9 @@ gods:
     color: '&e'
     description: Goddess of wisdom, civilization, and military strategy.
     bases:
-    - 45
-    - 47
-    - 98
+    - BRICK
+    - BOOKSHELF
+    - SMOOTH_BRICK
     ignoresBelow: 1
     angersBelow: 3
     messages:
@@ -93,25 +93,25 @@ gods:
       anger: '%GOD% tests your loyalty and faith.'
       ignore: '%GOD% is simply too busy for you now.'
     blessings:
-    - 2@250 give player;random 351:11r1-10
-    - 2@250 give player;random 351:7r1-10
-    - 2@250 give player;random 351:9r1-10
-    - 5@500 give player 20x8-32
-    - 6@500 give player 98x8-32
-    - 7@500 give player 45x8-32
-    - 8@500 give player 102x8-32
-    - 9@500 give player 355
-    - 10@500 give player 306
-    - 10@500 give player 307
-    - 10@500 give player 308
-    - 10@500 give player 309
-    - 12@50 give player 306;307;308;309
-    - 15@500 give player 46x1-5
-    - 15@400 give player 310
-    - 15@400 give player 311
-    - 15@400 give player 312
-    - 15@400 give player 313
-    - 17@50 give player 310;311;312;313
+    - 2@250 give player;random INK_SACK:11r1-10
+    - 2@250 give player;random INK_SACK:7r1-10
+    - 2@250 give player;random INK_SACK:9r1-10
+    - 5@500 give player GLASSx8-32
+    - 6@500 give player SMOOTH_BRICKx8-32
+    - 7@500 give player BRICKx8-32
+    - 8@500 give player THIN_GLASSx8-32
+    - 9@500 give player BED
+    - 10@500 give player IRON_HELMET
+    - 10@500 give player IRON_CHESTPLATE
+    - 10@500 give player IRON_LEGGINGS
+    - 10@500 give player IRON_BOOTS
+    - 12@50 give player IRON_HELMET;IRON_CHESTPLATE;IRON_LEGGINGS;IRON_BOOTS
+    - 15@500 give player TNTx1-5
+    - 15@400 give player DIAMOND_HELMET
+    - 15@400 give player DIAMOND_CHESTPLATE
+    - 15@400 give player DIAMOND_LEGGINGS
+    - 15@400 give player DIAMOND_BOOTS
+    - 17@50 give player DIAMOND_HELMET;DIAMOND_CHESTPLATE;DIAMOND_LEGGINGS;DIAMOND_BOOTS
     - 20@50 repair world 100
     curses:
     - 500 weaken player 10
@@ -121,10 +121,10 @@ gods:
     color: '&a'
     description: Goddess of the earth and all life.
     bases:
-    - 2
-    - 3
-    - 17
-    - 18
+    - GRASS
+    - DIRT
+    - LOG
+    - LEAVES
     ignoresBelow: 1
     angersBelow: 0
     messages:
@@ -132,28 +132,28 @@ gods:
       anger: '%GOD% frowns upon your apathy.'
       ignore: You would be unheard by %GOD% with this faith.
     blessings:
-    - 1@500 give player;random 295x8-64;295x8-64;6r0-10;6:1r0-10;6:2r0-10
-    - 2@250 give player;random 351:2r1-10
-    - 2@250 give player;random 351:3r1-10
-    - 2@250 give player;random 351:10r1-10
+    - 1@500 give player;random SEEDSx8-64;SEEDSx8-64;SAPLINGr0-10;SAPLING:1r0-10;SAPLING:2r0-10
+    - 2@250 give player;random INK_SACK:2r1-10
+    - 2@250 give player;random INK_SACK:3r1-10
+    - 2@250 give player;random INK_SACK:10r1-10
     - 3@500 feed player;random 20
-    - 4@500 give player 81x8-32
-    - 5@500 give player 86x4-16
-    - 6@500 give player 103x2-8
-    - 7@500 give player 338x8-32
-    - 8@500 give player 106x8-32
-    - 9@500 give player 39x1-32;40x1-32
-    - 10@500 give player 282;282;282
-    - 10@500 give player 260x1-3
-    - 10@250 give player 296x32-64;296x32-64
-    - 10@500 give player 292
-    - 10@250 give player 17:0x1-64
-    - 10@250 give player 17:1x1-64
-    - 10@250 give player 17:2x1-64
-    - 11@500 give player 256
-    - 12@500 give player 326
-    - 15@500 give player 293
-    - 16@500 give player 277
+    - 4@500 give player CATCUSx8-32
+    - 5@500 give player PUMPKINx4-16
+    - 6@500 give player MELON_BLOCKx2-8
+    - 7@500 give player SUGAR_CANEx8-32
+    - 8@500 give player VINEx8-32
+    - 9@500 give player BROWN_MUSHROOMx1-32;RED_MUSHROOMx1-32
+    - 10@500 give player MUSHROOM_SOUP;MUSHROOM_SOUP;MUSHROOM_SOUP
+    - 10@500 give player APPLEx3-16
+    - 10@250 give player WHEATx32-64;WHEATx32-64
+    - 10@500 give player IRON_HOE
+    - 10@250 give player LOG:0x1-64
+    - 10@250 give player LOG:1x1-64
+    - 10@250 give player LOG:2x1-64
+    - 11@500 give player IRON_SPADE
+    - 12@500 give player WATER_BUCKET
+    - 15@500 give player DIAMOND_HOE
+    - 16@500 give player DIAMOND_SPADE
     - 17@500 heal world 20
     - 17@500 feed world 20
     curses:
@@ -164,11 +164,11 @@ gods:
     color: '&8'
     description: God of the underworld.
     bases:
-    - 7
-    - 49
-    - 10
-    - 11
-    - 91
+    - BEDROCK
+    - OBSIDIAN
+    - LAVA
+    - STATIONARY_LAVA
+    - JACK_O_LANTERN
     ignoresBelow: 1
     angersBelow: 4
     messages:
@@ -176,24 +176,24 @@ gods:
       anger: '%GOD% curses your few remaining days.'
       ignore: Disturbing %GOD% now could only end badly.
     blessings:
-    - 2@250 give player;random 351:0r1-10
-    - 2@250 give player;random 351:8r1-10
-    - 3@500 give player 352x1-32
-    - 4@500 give player 50x8-32
-    - 5@500 give player 263x4-16;263r4-16
-    - 6@500 give player 91x1-4
-    - 7@500 give player 87x4-16
-    - 7@500 give player 88x4-16
-    - 7@500 give player 89x4-16
-    - 7@500 give player 30x4-16
-    - 9@500 give player 257
-    - 10@400 give player 264x1-4
-    - 10@100 give player 264x2-8
-    - 12@500 give player 91x2-8
-    - 13@500 give player 327
-    - 15@500 give player 293
-    - 15@100 give world 50x8-32
-    - 20@50 give world 264x1-3
+    - 2@250 give player;random INK_SACK:0r1-10
+    - 2@250 give player;random INK_SACK:8r1-10
+    - 3@500 give player BONEx1-32
+    - 4@500 give player TORCHx8-32
+    - 5@500 give player COALx4-16;COALr4-16
+    - 6@500 give player JACK_O_LANTERNx1-4
+    - 7@500 give player NETHERRACKx4-16
+    - 7@500 give player SOUL_SANDx4-16
+    - 7@500 give player GLOWSTONEx4-16
+    - 7@500 give player WEBx4-16
+    - 9@500 give player IRON_PICKAXE
+    - 10@400 give player DIAMONDx1-4
+    - 10@100 give player DIAMONDx2-8
+    - 12@500 give player JACK_O_LANTERNx2-8
+    - 13@500 give player LAVA_BUCKET
+    - 15@500 give player DIAMOND_HOE
+    - 15@100 give world TORCHx8-32
+    - 20@50 give world DIAMONDx1-3
     curses:
     - 500 dig player 3
     - 100 dig player;random 3
@@ -203,11 +203,11 @@ gods:
     color: '&3'
     description: God of the seas.
     bases:
-    - 8
-    - 9
-    - 22
-    - 79
-    - 80
+    - WATER
+    - STATIONARY_WATER
+    - LAPIS_BLOCK
+    - ICE
+    - SNOW_BLOCK
     ignoresBelow: 1
     angersBelow: 2
     messages:
@@ -215,25 +215,25 @@ gods:
       anger: '%GOD% reminds you of the torment of the abyss.'
       ignore: '%GOD% is too far away at sea to hear your prayers.'
     blessings:
-    - 2@250 give player;random 351:4r1-10
-    - 2@250 give player;random 351:6r1-10
-    - 3@500 give player 349x4-16
-    - 4@500 give player 50x8-32
-    - 5@500 give player 263x4-16;263r4-16
-    - 5@500 give player 346
-    - 6@500 give player 333
-    - 7@500 give player 337x8-32
-    - 7@500 give player 24x4-16
-    - 7@500 give player 20x4-16
-    - 8@500 give player 102x4-16
-    - 9@500 give player 54x2-8
-    - 10@500 give player 326
-    - 10@500 give player 345
-    - 10@500 give player 346
-    - 12@250 give player;random 346
-    - 15@500 give player 79x8-32
-    - 17@500 give player 19x2-8
-    - 20@500 give player 22x2-8
+    - 2@250 give player;random INK_SACK:4r1-10
+    - 2@250 give player;random INK_SACK:6r1-10
+    - 3@500 give player RAW_FISHx4-16
+    - 4@500 give player TORCHx8-32
+    - 5@500 give player COALx4-16;COALr4-16
+    - 5@500 give player FISHING_ROD
+    - 6@500 give player BOAT
+    - 7@500 give player CLAY_BALLx8-32
+    - 7@500 give player SANDSTONEx4-16
+    - 7@500 give player GLASSx4-16
+    - 8@500 give player WATER_LILYx4-16
+    - 9@500 give player CHESTx2-8
+    - 10@500 give player WATER_BUCKET
+    - 10@500 give player COMPASS
+    - 10@500 give player;random FISHING_ROD
+    - 12@250 give world FISHING_ROD
+    - 15@500 give player ICEx8-32
+    - 17@500 give player SPONGEx2-8
+    - 20@500 give player LAPIS_BLOCKx2-8
     curses:
     - 500 dig player 3
     - 100 dig player;random 3
@@ -243,11 +243,11 @@ gods:
     color: '&d'
     description: God of sky and thunder.
     bases:
-    - 0
-    - 29
-    - 33
-    - 34
-    - 42
+    - AIR
+    - PISTON_STICKY_BASE
+    - PISTON_BASE
+    - PISTON_EXTENSION
+    - IRON_BLOCK
     ignoresBelow: 1
     angersBelow: 3
     messages:
@@ -255,26 +255,26 @@ gods:
       anger: '%GOD% strikes fear into your weak heart.'
       ignore: '%GOD% cannot be bothered with you for now.'
     blessings:
-    - 2@250 give player;random 351:12r1-10
-    - 2@250 give player;random 351:5r1-10
-    - 5@500 give player 331x8-32
-    - 5@500 give player 69x4-16
-    - 5@500 give player 70x4-16
-    - 5@500 give player 76x4-16
-    - 5@500 give player 77x4-16
-    - 10@500 give player 265x2-8
-    - 10@250 give player 265x4-16
-    - 10@250 give player 265x2-8;266x2-8
-    - 10@500 give player 345
-    - 10@500 give player 347
-    - 12@500 give player 33x1-4
-    - 15@500 give player 27x1-4
-    - 15@500 give player 28x1-4
-    - 15@500 give player 29x1-4
-    - 15@500 give player 66x8-32
-    - 15@250 give player 66x16-64
-    - 17@500 give player 19x2-8
-    - 20@50 give player 57r1-2;41r1-2
+    - 2@250 give player;random INK_SACK:12r1-10
+    - 2@250 give player;random INK_SACK:5r1-10
+    - 5@500 give player REDSTONEx8-32
+    - 5@500 give player LEVERx4-16
+    - 5@500 give player STONE_PLATEx4-16
+    - 5@500 give player REDSTONE_TORCH_ONx4-16
+    - 5@500 give player STONE_BUTTONx4-16
+    - 10@500 give player IRON_INGOTx2-8
+    - 10@250 give player IRON_INGOTx4-16
+    - 10@250 give player IRON_INGOTx2-8;GOLD_INGOTx2-8
+    - 10@500 give player COMPASS
+    - 10@500 give player WATCH
+    - 12@500 give player PISTON_BASEx1-4
+    - 15@500 give player POWERED_RAILx1-4
+    - 15@500 give player DETECTOR_RAILx1-4
+    - 15@500 give player PISTON_STICKY_BASEx1-4
+    - 15@500 give player RAILSx8-32
+    - 15@250 give player RAILSx16-64
+    - 17@500 give player DISPENSERx2-8
+    - 20@50 give player DIAMOND_BLOCKr1-2;GOLD_BLOCKr1-2
     curses:
     - 250 shock player 1
     - 100 shock random 1
