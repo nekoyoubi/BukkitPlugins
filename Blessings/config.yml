@@ -18,32 +18,31 @@ gods:
     - YELLOW_FLOWER
     - RED_ROSE
     ignoresBelow: 1
-    angersBelow: 0
+    angersBelow: 3
     messages:
       please: '%GOD% shows you the beauty of %WORLD%.'
       anger: '%GOD% is disappointed with your lack of adoration.'
       ignore: You are not yet ready to experience %GOD% fully.
     blessings:
-    - 1@500 give player ARROWx0-32
-    - 2@250 give player;random INK_SACK:1r1-10
-    - 2@250 give player;random INK_SACK:14r1-10
-    - 3@500 give player BOW;ARROWx0-64
-    - 4@300 give player FLINT_AND_STEEL
-    - 5@500 give player IRON_AXE
-    - 6@500 give player IRON_FENCEx1-32
-    - 7@500 give player IRON_SWORD
-    - 8@500 give player BOW;ARROWx0-64
-    - 10@500 spawn player tamedwolf 1-5
-    - 10@500 give player GRILLED_PORKr0-3;COOKED_BEEFr0-3
-    - 10@500 give player ARROWx32-96
-    - 12@500 give player DIAMOND_AXE
-    - 14@500 give player DIAMOND_SWORD
-    - 15@500 give player TNTx1-5
-    - 17@100 spawn player;random tamedwolf 1-5
-    - 20@50 spawn world tamedwolf 1-2
+    - 2@500 give player RED_ROSE:7r1-8
+    - 3@500 give player DOUBLE_PLANT:1x8-32
+    - 5@500 give player MELON_BLOCKx8-32
+    - 7@250 give player GOLDEN_APPLE
+    - 9@250 give player LEASHx4-16
+    - 10@250 give player MONSTER_EGG:120x1-8
+    - 13@250 give player POTION:8193r1-4
+    - 13@250 give player POTION:8197r1-4
+    - 13@250 give player POTION:8201r1-4
+    - 14@500 give player CAKE
+    - 15@250 give player JUKEBOX
+    - 17@250 give player POTION:8194r1-4
+    - 18@250 give player POTION:8206r1-4
+    - 20@100 give player RECORD_10
+    - 20@100 give player RECORD_3
+    - 20@100 give player RECORD_12
+    - 20@50 give player DIAMOND_BARDING
     curses:
-    - 500 burn player 3
-    - 500 spawn player angrywolf 1
+    - 500 burn player 1
   ares:
     name: Ares
     color: '&4'
