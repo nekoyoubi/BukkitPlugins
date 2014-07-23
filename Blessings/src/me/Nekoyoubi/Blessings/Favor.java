@@ -14,6 +14,8 @@ import org.bukkit.entity.Wolf;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
+import static me.Nekoyoubi.Blessings.Nekoyoubi.*;
+
 public class Favor {
 
 	/**
@@ -79,7 +81,180 @@ public class Favor {
 					boolean isRando = im.group(5) != null && im.group(5).equals("r");
 					Random rando = new Random();
 					Integer quantity = getQuantity(player, rando, min, max, isRando);
-					if (quantity>0) items.add(new ItemStack(Material.getMaterial(id), quantity, data));
+                    ItemStack item = null;
+                    switch (Material.getMaterial(id)) {
+
+                        case IRON_SWORD:
+                            item = getEnchSword(Material.IRON_SWORD);
+                            break;
+                        case IRON_SPADE:
+                            item = getEnchSpade(Material.IRON_SPADE);
+                            break;
+                        case IRON_PICKAXE:
+                            item = getEnchPick(Material.IRON_PICKAXE);
+                            break;
+                        case IRON_AXE:
+                            item = getEnchAxe(Material.IRON_AXE);
+                            break;
+
+                        case WOOD_SWORD:
+                            item = getEnchSword(Material.WOOD_SWORD);
+                            break;
+                        case WOOD_SPADE:
+                            item = getEnchSpade(Material.WOOD_SPADE);
+                            break;
+                        case WOOD_PICKAXE:
+                            item = getEnchPick(Material.WOOD_PICKAXE);
+                            break;
+                        case WOOD_AXE:
+                            item = getEnchAxe(Material.WOOD_AXE);
+                            break;
+
+                        case STONE_SWORD:
+                            item = getEnchSword(Material.STONE_SWORD);
+                            break;
+                        case STONE_SPADE:
+                            item = getEnchSpade(Material.STONE_SPADE);
+                            break;
+                        case STONE_PICKAXE:
+                            item = getEnchPick(Material.STONE_PICKAXE);
+                            break;
+                        case STONE_AXE:
+                            item = getEnchAxe(Material.STONE_AXE);
+                            break;
+
+                        case DIAMOND_SWORD:
+                            item = getEnchSword(Material.DIAMOND_SWORD);
+                            break;
+                        case DIAMOND_SPADE:
+                            item = getEnchSpade(Material.DIAMOND_SPADE);
+                            break;
+                        case DIAMOND_PICKAXE:
+                            item = getEnchPick(Material.DIAMOND_PICKAXE);
+                            break;
+                        case DIAMOND_AXE:
+                            item = getEnchAxe(Material.DIAMOND_AXE);
+                            break;
+
+                        case GOLD_SWORD:
+                            item = getEnchSword(Material.GOLD_SWORD);
+                            break;
+                        case GOLD_SPADE:
+                            item = getEnchSpade(Material.GOLD_SPADE);
+                            break;
+                        case GOLD_PICKAXE:
+                            item = getEnchPick(Material.GOLD_PICKAXE);
+                            break;
+                        case GOLD_AXE:
+                            item = getEnchAxe(Material.GOLD_AXE);
+                            break;
+
+                        case WOOD_HOE:
+                            item = getEnchHoe(Material.WOOD_HOE);
+                            break;
+                        case STONE_HOE:
+                            item = getEnchHoe(Material.STONE_HOE);
+                            break;
+                        case IRON_HOE:
+                            item = getEnchHoe(Material.IRON_HOE);
+                            break;
+                        case DIAMOND_HOE:
+                            item = getEnchHoe(Material.DIAMOND_HOE);
+                            break;
+                        case GOLD_HOE:
+                            item = getEnchHoe(Material.GOLD_HOE);
+                            break;
+
+                        case LEATHER_HELMET:
+                            item = getEnchHelmet(Material.LEATHER_HELMET);
+                            break;
+                        case LEATHER_CHESTPLATE:
+                            item = getEnchChest(Material.LEATHER_CHESTPLATE);
+                            break;
+                        case LEATHER_LEGGINGS:
+                            item = getEnchLegs(Material.LEATHER_LEGGINGS);
+                            break;
+                        case LEATHER_BOOTS:
+                            item = getEnchBoots(Material.LEATHER_BOOTS);
+                            break;
+
+                        case CHAINMAIL_HELMET:
+                            item = getEnchHelmet(Material.CHAINMAIL_HELMET);
+                            break;
+                        case CHAINMAIL_CHESTPLATE:
+                            item = getEnchChest(Material.CHAINMAIL_CHESTPLATE);
+                            break;
+                        case CHAINMAIL_LEGGINGS:
+                            item = getEnchLegs(Material.CHAINMAIL_LEGGINGS);
+                            break;
+                        case CHAINMAIL_BOOTS:
+                            item = getEnchBoots(Material.CHAINMAIL_BOOTS);
+                            break;
+
+                        case IRON_HELMET:
+                            item = getEnchHelmet(Material.IRON_HELMET);
+                            break;
+                        case IRON_CHESTPLATE:
+                            item = getEnchChest(Material.IRON_CHESTPLATE);
+                            break;
+                        case IRON_LEGGINGS:
+                            item = getEnchLegs(Material.IRON_LEGGINGS);
+                            break;
+                        case IRON_BOOTS:
+                            item = getEnchBoots(Material.IRON_BOOTS);
+                            break;
+
+                        case DIAMOND_HELMET:
+                            item = getEnchHelmet(Material.DIAMOND_HELMET);
+                            break;
+                        case DIAMOND_CHESTPLATE:
+                            item = getEnchChest(Material.DIAMOND_CHESTPLATE);
+                            break;
+                        case DIAMOND_LEGGINGS:
+                            item = getEnchLegs(Material.DIAMOND_LEGGINGS);
+                            break;
+                        case DIAMOND_BOOTS:
+                            item = getEnchBoots(Material.DIAMOND_BOOTS);
+                            break;
+
+                        case GOLD_HELMET:
+                            item = getEnchHelmet(Material.GOLD_HELMET);
+                            break;
+                        case GOLD_CHESTPLATE:
+                            item = getEnchChest(Material.GOLD_CHESTPLATE);
+                            break;
+                        case GOLD_LEGGINGS:
+                            item = getEnchLegs(Material.GOLD_LEGGINGS);
+                            break;
+                        case GOLD_BOOTS:
+                            item = getEnchBoots(Material.GOLD_BOOTS);
+                            break;
+
+                        case BOW:
+                            item = getEnchBow(Material.BOW);
+                            break;
+
+                        case FISHING_ROD:
+                            item = getEnchRod(Material.FISHING_ROD);
+                            break;
+
+                        case SHEARS:
+                            item = getEnchShears(Material.SHEARS);
+                            break;
+
+                        case FLINT_AND_STEEL:
+                            item = getEnchFlint(Material.FLINT_AND_STEEL);
+                            break;
+
+                        case CARROT_STICK:
+                            item = getEnchCarrot(Material.CARROT_STICK);
+                            break;
+
+                    }
+                    if (item != null)
+                        items.add(item);
+                    else if (quantity > 0)
+                        items.add(new ItemStack(Material.getMaterial(id), quantity, data));
 				}
 			}
 			for (Player target : effectTargets) {
