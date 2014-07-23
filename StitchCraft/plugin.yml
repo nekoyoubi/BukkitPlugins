@@ -1,0 +1,8 @@
+name: StitchCraft
+main: me.Nekoyoubi.StitchCraft.StitchCraft
+version: 0.1
+commands:
+    autotorch:
+        description: Toggles automatic torch placement.
+        usage: /<command>
+        aliases: at

@@ -1,3 +1,7 @@
 .idea
+.gitignore
 bukkitplugins.properties
-bukkitplugins.xml
+bukkitplugins*.properties
+bukkitplugins*.xml
+module_*.xml
+
