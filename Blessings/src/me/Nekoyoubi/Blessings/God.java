@@ -21,7 +21,8 @@ public class God {
 	public Integer ignoresBelow;
 	public Integer angersBelow;
 	public String colorName() { return colorCode + displayName + "&f"; }
-	public void offer(Player player, Block shrine) {
+
+    public void offer(Player player, Block shrine) {
 		int level = player.getLevel();
 		if (level > ignoresBelow) {
 			Random rando = new Random();
@@ -43,14 +44,18 @@ public class God {
 				player.setTotalExperience(0);
 			}
 			
-			int newLevel = (level > 20 ? 19 : level-1);
 			player.setTotalExperience(0);
 			player.setExp(0);
+            player.setLevel(0);
+
+            /* Quit being a sissy and go back to costing too much. ;)
+            int newLevel = (level > 20 ? 19 : level-1);
 			player.setLevel(newLevel);
-			
+
 			Nekoyoubi.sendMessage(player, "You are left with &6"+player.getLevel()+
 					(player.getLevel()==1?"&f level ":"&f levels ")+
 					"of faith.");
+            */
 			if (level < angersBelow) {
 				Nekoyoubi.sendMessage(player, untoken(msgAnger));
 				boolean cursed = false;

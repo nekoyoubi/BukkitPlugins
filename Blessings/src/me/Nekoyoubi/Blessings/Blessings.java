@@ -6,7 +6,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -103,9 +102,9 @@ public class Blessings extends JavaPlugin {
 		god.displayName = config.getString("gods."+name+".name");
 		god.colorCode = config.getString("gods."+name+".color");
 		god.description = config.getString("gods."+name+".description");
-		List<Integer> bases = Nekoyoubi.castList(Integer.class, config.getList("gods."+name+".bases"));
+		List<String> bases = Nekoyoubi.castList(String.class, config.getList("gods."+name+".bases"));
 		god.shrineBases = new ArrayList<Material>();
-		for (Integer blockId : bases) god.shrineBases.add(Material.getMaterial(blockId));
+		for (String id : bases) god.shrineBases.add(Material.getMaterial(id));
 		god.angersBelow = config.getInt("gods."+name+".angersBelow");
 		god.ignoresBelow = config.getInt("gods."+name+".ignoresBelow");
 		god.msgPlease = config.getString("gods."+name+".messages.please");

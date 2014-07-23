@@ -1,7 +1,6 @@
 package me.Nekoyoubi.Blessings;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -63,11 +62,11 @@ public class Favor {
 		ArrayList<Player> effectTargets = getTargets(player);
 		if (this.action.equalsIgnoreCase("give")) {
 			ArrayList<ItemStack> items = new ArrayList<ItemStack>();
-			Pattern ip = Pattern.compile("^(\\d+)(:(\\d+))?(([xr])((\\d+)-(\\d+)))?$");
+			Pattern ip = Pattern.compile("^([A-Z_]+)(:(\\d+))?(([xr])((\\d+)-(\\d+)))?$");
 			for (String i : this.data.split(";")) {
 				Matcher im = ip.matcher(i);
 				if (im.find()) {
-					Integer id = Integer.parseInt(im.group(1));
+					String id = im.group(1);
 					Short data = im.group(3) != null
 						? Short.parseShort(im.group(3))
 						: 0;
@@ -77,16 +76,13 @@ public class Favor {
 					Integer max = im.group(8) != null
 						? Integer.parseInt(im.group(8))
 						: 1;
-					boolean isRando = im.group(5) != null
-						? im.group(5) == "r"
-						: false;
+					boolean isRando = im.group(5) != null && im.group(5).equals("r");
 					Random rando = new Random();
 					Integer quantity = getQuantity(player, rando, min, max, isRando);
-					if (quantity>0) items.add(new ItemStack(id, quantity, data));
+					if (quantity>0) items.add(new ItemStack(Material.getMaterial(id), quantity, data));
 				}
 			}
-			
-			for (Player target : effectTargets) {				
+			for (Player target : effectTargets) {
 				for (ItemStack itemStack : items) {
 					if (target.getInventory().firstEmpty()<0)
 						target.getWorld().dropItem(target.getLocation(), itemStack);
@@ -111,9 +107,7 @@ public class Favor {
 				Integer max = sm.group(5) != null
 					? Integer.parseInt(sm.group(5))
 					: 1;
-				boolean isRando = sm.group(6) != null
-					? sm.group(6) == "r"
-					: false;
+				boolean isRando = sm.group(6) != null && sm.group(6).equals("r");
 				Integer quantity = getQuantity(player, rando, min, max, isRando);
 				
 				for (Player target : effectTargets) {
@@ -202,7 +196,7 @@ public class Favor {
 				player.getWorld().setStorm(true);
 				for (Player target : effectTargets) {
 					if (target == player)
-						Nekoyoubi.sendMessage(target, god.colorName()+" was not amused. The skys rumble and riot above you.");
+						Nekoyoubi.sendMessage(target, god.colorName()+" was not amused. The skies rumble and riot above you.");
 					else
 						Nekoyoubi.sendMessage(target, player.getDisplayName()+" has brought the tempests of "+god.colorName()+" upon you.");
 				}
@@ -228,24 +222,13 @@ public class Favor {
 		} else if (this.action.equalsIgnoreCase("weaken")) {
 			for (Player target : effectTargets) {
 				PlayerInventory inv = target.getInventory();
-				HashMap<Integer,ItemStack> map = new HashMap<Integer, ItemStack>();
-				map.putAll(inv.all(Material.IRON_HELMET));
-				map.putAll(inv.all(Material.IRON_CHESTPLATE));
-				map.putAll(inv.all(Material.IRON_LEGGINGS));
-				map.putAll(inv.all(Material.IRON_BOOTS));
-				map.putAll(inv.all(Material.DIAMOND_HELMET));
-				map.putAll(inv.all(Material.DIAMOND_CHESTPLATE));
-				map.putAll(inv.all(Material.DIAMOND_LEGGINGS));
-				map.putAll(inv.all(Material.DIAMOND_BOOTS));
-				//Nekoyoubi.sendMessage(target, map.size()+"");
-				
-				//Random rando = new Random();
-				//Object[] values = map.values().toArray();
-				//ItemStack item = (ItemStack)values[rando.nextInt(values.length)];
-				//Nekoyoubi.sendMessage(target, "Before: "+item.getDurability());
-				//item.setDurability((short)(item.getDurability()/(short)2));
-				//Nekoyoubi.sendMessage(target, "After: "+item.getDurability());
-				//target.updateInventory();
+                Random rando = new Random();
+                // HACK: should really do something better than a rando(50), but it's what i have in the moment
+				inv.getHelmet().setDurability((short)(inv.getHelmet().getDurability()+rando.nextInt(50)));
+                inv.getChestplate().setDurability((short)(inv.getChestplate().getDurability()+rando.nextInt(50)));
+                inv.getLeggings().setDurability((short)(inv.getLeggings().getDurability()+rando.nextInt(50)));
+                inv.getBoots().setDurability((short) (inv.getBoots().getDurability()+rando.nextInt(50)));
+				target.updateInventory();
 				if (target == player)
 					Nekoyoubi.sendMessage(target, god.colorName()+" was not amused. Your armor was your aegis.");
 				else

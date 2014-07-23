@@ -1,13 +1,14 @@
 shrine: 'DIAMOND_BLOCK'
 gods:
   list:
+  - aphrodite
   - ares
   - athena
   - gaia
   - hades
   - poseidon
   - zeus
-  ares:
+  aphrodite:
     name: Aphrodite
     color: '&c'
     description: Goddess of love and beauty.
