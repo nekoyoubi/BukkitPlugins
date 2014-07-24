@@ -4,4 +4,4 @@ bukkitplugins.properties
 bukkitplugins*.properties
 bukkitplugins*.xml
 module_*.xml
-
+*.iml

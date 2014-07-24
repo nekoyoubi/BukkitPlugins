@@ -1,1 +1,6 @@
-shrine: 'DIAMOND_BLOCK'
+autotorch:
+  enabled: true
+  onbydefault: false
+  lightlevel: 7
+sandtoglass:
+  enabled: true
